@@ -25,13 +25,12 @@ int main(void)
     n1->title = "Andy";
     n1->price = 1;
 
-    copyBook(n1);
-
-    n2 = copyBook;
+    n2 = copyBook(n1);
 
     printf("The copied version check = Title is %s and price is%d\n", n2->title, n2->price);
 
-    free (n1);
+    free(n1);
+    free(n2);
 
     return 0;
 }
