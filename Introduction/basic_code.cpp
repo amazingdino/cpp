@@ -4,14 +4,13 @@
 void print();
 
 int main(void)
-{   
+{
     int x;
     std::cin >> x;
     printf("%d\n", x);
     std::cout << "The value of x is " << x << "\n";
     printf("next\n");
     print();
-
 }
 
 void print()
