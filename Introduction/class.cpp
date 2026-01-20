@@ -4,7 +4,7 @@
 class Vector 
 {
     public:
-        Vector(int s) :elem{new double[s]}, sz{s} { } // constr uct a Vector
+        Vector(int s) :elem{new double[s]}, sz{s} { } // construct a Vector
         double& operator[](int i) { return elem[i]; } // element access: subscripting
         int size() { return sz; }
     private:
@@ -14,8 +14,6 @@ class Vector
 
 int main(void)
 {
-
     Vector v(6); //sz = 6
-
     return 0;
 }

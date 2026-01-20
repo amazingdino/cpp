@@ -12,7 +12,7 @@ int main(void)
 
     int *arr = (int *)malloc(sizeof(int) * N);
 
-    for(i=0; i<N;i++)
+    for(i=0; i<N;i++)//반복
     {
         scanf("%d", &arr[i]);
         sum += arr[i];
