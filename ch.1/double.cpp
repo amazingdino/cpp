@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std; // able to use cout and cin without typing std
 
@@ -19,6 +20,8 @@ int main(void)
     double x;
     cin >> x;
     print_square(x);
+    cout << "sqrt of " << x << "is" << sqrt(x) << endl;
+
     return 0;
 }
 

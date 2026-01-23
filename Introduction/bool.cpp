@@ -11,11 +11,12 @@ bool accept()
 {
     cout << "Do you want to proceed (y or n)?"<<endl; // write question
     char answer = 0; // initialize to a value that will not appear on input
-    cin >> answer; // read answer
+    cin >> answer; // read answer like scanf
     if (answer == 'y')
         return true;
     return false;
 }
+
 
 int main(void)
 {
