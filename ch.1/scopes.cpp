@@ -1,5 +1,8 @@
 #include <iostream>
 #include <vector>
+#include <complex>
+
+using namespace std;
 
 //local scopes are ones initialized within the blocks
 // class copes are ones initialized within the class/ struct/ union

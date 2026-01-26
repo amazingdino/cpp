@@ -1,6 +1,8 @@
 #include <iostream>
-#include <cmath>
+#include <complex>
 #include <vector>
+
+using namespace std;
 
 int main(void)
 {

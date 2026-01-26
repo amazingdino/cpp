@@ -1,5 +1,20 @@
 #include <iostream>
 
+using namespace std;
+
+template <typename T>
+
+struct Link
+{
+    T value;
+    Link *next;
+};
+
+struct Record
+{
+    int number;
+};
+
 int count_x(const char *p, char x)
 // to let it points to something
 {
@@ -33,10 +48,7 @@ int main(void)
     // as null in C was 0, but null pointer is no value
     // like literally NULL;
     Link<Record> *lst = nullptr;
-    int x = nullptr; //error since nullptr has no value
-
-
-
+    int x /*= nullptr; */ //error since nullptr has no value
 
     return 0;
 }
