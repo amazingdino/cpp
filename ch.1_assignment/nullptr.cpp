@@ -9,20 +9,20 @@ using namespace std;
 int main(void)
 {
     char str[1000001];
-    int i, count = 0;
+    int i, cnt = 0;
     const char *p = str; //made a pointer
 
     cin >> str;
 
-    for(i=0; str[i] == '\0'; i++)//but im trying to scan how many "ab" are in my string
+    for(i=0; p[i] != '\0'; i++)//but im trying to scan how many "ab" are in my string
     {
-        if(str[i] == 'a' && str[i + 1] == 'b')
+        if(p[i] == 'a' && p[i + 1] == 'b')
         {
-            count ++;
+            cnt++;
         }
     }
 
-    cout << "there are " << count << " abs in the string";
+    cout << "there are " << cnt << " abs in the string";
 
     return 0;
 }

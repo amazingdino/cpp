@@ -12,9 +12,9 @@ int main(void)
     int var = 17;
     constexpr int a = square(17);
     //constexpr int b = square(var);
-    // as you see we need to input the number before running
+    // as you see we need to input the number before running //compile time
     // when it comes to constant expression
-    // but const we could input after running
+    // but const we could input after running //run time
     // because it just means constant
     // so once we input a number it will stay constant.
     const int c = square(var);

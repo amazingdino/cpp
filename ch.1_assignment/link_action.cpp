@@ -4,37 +4,48 @@ using namespace std;
 
 template <typename T>
 
-struct Link
+struct Link //link list
 {
     T value;
     Link *next;
 };
 
-struct Record
+struct Record // 받는 direction
 {
-    int number;
+    char direction;
+    int count;
 };
+
+struct axis // print 
+{
+    int a = 0;
+    int operator()(int x, int y)
+    {
+        
+    }
+}
 
 
 int main(void)
 {
     int i;
-    char str[101];
+    char str[101] = "uuuxxxrrddduu";
+    axis a;
 
-    cin >> str;
-    for(i=0; str[i] = '\0'; i++)
+    Link<Record> *First = new Link<Record>{1, nullptr};
+
+    Link *new_node;
+
+    for(i=0; str[i] != '\0'; i++)
     {
-        if(str[i] == 'u'||'d'||'l'||'r')
+        if(str[i] == 'u')
         {
-            str[i];
-        }
-        else
-        {
-            return 0;
+            new_node->value = str[i];
         }
     }
 
-    Link<Record> ;
+    new_node->next = First; 
 
     return 0;
+
 }
